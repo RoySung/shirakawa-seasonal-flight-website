@@ -1,5 +1,39 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="Follow a paper plane above Shirakawa-go through four watercolor seasons."><title>Shirakawa · Seasonal Flight</title><link rel="stylesheet" href="style.css"></head><body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Shirakawa · Seasonal Flight — Four Watercolor Seasons</title>
+  <meta name="description" content="Follow a paper plane over Shirakawa-go, Japan, through four watercolor seasons. Explore cherry blossoms, green fields, autumn leaves and snow with gentle lo-fi music.">
+  <link rel="canonical" href="https://roysung.github.io/shirakawa-seasonal-flight-website/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shirakawa · Seasonal Flight">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Shirakawa · Seasonal Flight — Four Watercolor Seasons">
+  <meta property="og:description" content="Follow a paper plane over Shirakawa-go, Japan, through four watercolor seasons. Explore cherry blossoms, green fields, autumn leaves and snow with gentle lo-fi music.">
+  <meta property="og:url" content="https://roysung.github.io/shirakawa-seasonal-flight-website/">
+  <meta property="og:image" content="https://roysung.github.io/shirakawa-seasonal-flight-website/assets/og-shirakawa.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A watercolor panorama of Shirakawa-go through spring blossoms, summer fields, autumn foliage and winter snow, with a paper plane and the title Shirakawa Seasonal Flight.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shirakawa · Seasonal Flight — Four Watercolor Seasons">
+  <meta name="twitter:description" content="Follow a paper plane over Shirakawa-go, Japan, through four watercolor seasons. Explore cherry blossoms, green fields, autumn leaves and snow with gentle lo-fi music.">
+  <meta name="twitter:image" content="https://roysung.github.io/shirakawa-seasonal-flight-website/assets/og-shirakawa.jpg">
+  <meta name="twitter:image:alt" content="A watercolor panorama of Shirakawa-go through spring blossoms, summer fields, autumn foliage and winter snow, with a paper plane and the title Shirakawa Seasonal Flight.">
+
+  <link rel="icon" href="favicon.ico?v=shirakawa-house" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=shirakawa-house">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=shirakawa-house">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png?v=shirakawa-house">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=shirakawa-house">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <main><figure><div class="scene" id="scene"><canvas id="landscape" role="img" aria-label="An aerial watercolor view of Shirakawa-go with a paper plane, moving cars, flowing water and drifting clouds. Pinch or scroll to zoom."></canvas><div class="paper-edge" aria-hidden="true"></div><div id="loading" role="status">Flying to Shirakawa-go…</div></div><figcaption><h1>Shirakawa-go, Japan</h1><p id="season-caption">Spring · Cherry blossoms over the village</p><div class="seasons" role="group" aria-label="Choose a season"><button type="button" data-season="spring" aria-pressed="true">Spring</button><button type="button" data-season="summer" aria-pressed="false">Summer</button><button type="button" data-season="autumn" aria-pressed="false">Autumn</button><button type="button" data-season="winter" aria-pressed="false">Winter</button></div><span id="season-status" class="sr-only" role="status"></span></figcaption></figure>
 <span id="music-status" class="sr-only" role="status"></span><div class="settings"><button id="settings-toggle" aria-label="Open settings" aria-expanded="false" aria-controls="settings-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></svg></button><section id="settings-panel" aria-label="Settings" hidden><header><span>Settings</span><button id="close-settings" aria-label="Close settings">×</button></header><button id="play" class="row" aria-pressed="true"><span>Auto flight</span><i class="switch"></i></button><button id="cloud" class="row" aria-pressed="true"><span>Clouds</span><i class="switch"></i></button><button id="snow" class="row" aria-pressed="true"><span id="particle-label">Petals</span><i class="switch"></i></button><button id="plane" class="row" aria-pressed="true"><span>Paper plane</span><i class="switch"></i></button><button type="button" id="music-toggle" class="row" aria-pressed="true"><span>Music</span><i class="switch"></i></button><label class="row" for="music-volume"><span>Music volume</span><input id="music-volume" type="range" min="0" max="100" value="38" aria-label="Music volume"></label><label class="row" for="speed"><span>Flight speed</span><select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label></section></div>
 </main><script src="app.js?v=particles-35"></script><script src="music.js?v=watercolor-acoustic-4"></script></body></html>
