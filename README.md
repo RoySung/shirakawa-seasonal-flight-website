@@ -2,6 +2,14 @@
 
 An illustrated journey over Shirakawa-go, Japan, with four watercolor seasons and a drifting paper plane.
 
+## Screenshot
+
+![Website screenshot showing a watercolor spring landscape over Shirakawa-go and season controls](docs/assets/screenshot.png)
+
+## OG image
+
+![Social sharing preview featuring Shirakawa-go in four watercolor seasons](docs/assets/og-shirakawa.jpg)
+
 ## Features
 
 - Spring blossoms, lush summer fields, autumn foliage and winter snow

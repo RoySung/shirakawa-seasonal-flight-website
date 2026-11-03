@@ -29,7 +29,9 @@
  volume.addEventListener('input',()=>{preferred=Number(volume.value)/100;try{localStorage.setItem('village-music-volume',String(preferred));}catch{}if(desired&&!document.hidden)ramp(preferred);});
  // A trusted gesture retries playback when the browser blocks sound on load.
  function unlock(event){if(!event.target.closest('#music-toggle')&&desired&&audio.paused)start();}
- document.addEventListener('pointerdown',unlock);document.addEventListener('keydown',unlock);
+ // Touch/pen activation can arrive on release; click also covers browsers
+ // that reject playback during the initial pointerdown.
+ for(const event of ['pointerdown','pointerup','click','keydown'])document.addEventListener(event,unlock);
  document.addEventListener('visibilitychange',()=>{generation++;if(document.hidden){cancelAnimationFrame(fade);audio.pause();audio.volume=0;}else if(desired)start();});
  render();start();
 })();
